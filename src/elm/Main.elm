@@ -9,8 +9,9 @@ import Window exposing (Size)
 import Task
 import Time exposing (Time)
 import AnimationFrame
-
 import Components.Shaders.Funkshader exposing (..)
+--import Components.Shaders.VHS exposing (..)
+
 import Bootstrap.Grid as Grid exposing (..)
 
 import Bootstrap.Navbar as Navbar
@@ -25,7 +26,6 @@ type alias Vertex =
 
 
 -- MESH --
-
 
 
 mesh : Mesh Vertex
@@ -104,7 +104,7 @@ navBar state =
         |> Navbar.items
             [ Navbar.itemLink [href "https://github.com/nokynokes"] [ text "GitHub"]
             , Navbar.itemLink [href "https://www.linkedin.com/in/nolan-cretney-164078106/"] [ text "LinkedIn"]
-            , Navbar.itemLink [href "static/web/index.html"] [ text "Other"]
+            , Navbar.itemLink [href "static/web/musicvisual.html"] [ text "Other"]
             ]
         |> Navbar.view state
 
